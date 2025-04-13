@@ -34,7 +34,7 @@ This application automates the process of bridging ETH tokens between various te
 2. Create and activate a virtual environment:
    ```
    # Create virtual environment
-   python -m venv venv
+   python -m venv swap
    
    # Activate virtual environment
    # On Windows:
@@ -51,8 +51,18 @@ This application automates the process of bridging ETH tokens between various te
 4. Set up configuration files:
    - `config.json`: Bridge configuration (see Configuration section)
    - `pk.txt`: List of private keys (one per line)
+```bash
+nano pk.txt
+```
    - `proxy.txt` (optional): List of proxies (one per line)
+```bash
+nano proxy.txt
+```
+running bot
 
+```bash
+python -m src.app
+```
 ## Configuration
 
 ### config.json
